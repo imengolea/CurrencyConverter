@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="188dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="220dp"
+        android:onClick="Conv"
+        android:text="@string/cenversion"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="61dp"
+        android:autofillHints=""
+        android:hint="@string/euro"
+        android:inputType="number"
+        android:rotationX="0"
+        app:layout_constraintBottom_toTopOf="@+id/e2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp" />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="68dp"
+        android:autofillHints=""
+        android:hint="@string/dinar"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/eurotodinar"
+        android:textColor="#b17179"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/e2"
+        app:layout_constraintTop_toBottomOf="@+id/e1"
+        app:layout_constraintVertical_bias="0.29"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
